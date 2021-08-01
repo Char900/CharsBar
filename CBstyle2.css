@@ -42,8 +42,8 @@ body {
     background-color: #f6f9fc !important;
 }
 .bg-primary {
-    background: url("assets/BlackWood.jpg");
-    background-color: #151719 !important
+    background: url("assets/BlackWood.jpg") #151719;
+
 }
 h1,
 h2,
@@ -325,8 +325,7 @@ Food card
     margin-top: 10px;
 }
 .bg-image-1 {
-    background: url("assets/BlackWood.jpg") no-repeat center center;
-    background-color: #151719;
+    background: url("assets/BlackWood.jpg") no-repeat center center #151719;
     background-size: cover;
 }
 
