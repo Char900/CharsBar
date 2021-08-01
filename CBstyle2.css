@@ -27,6 +27,7 @@ html {
     scroll-behavior: smooth;
     -webkit-transition: all 2s;
     transition: all 2s;
+    overflow-x: hidden;
 }
 body {
     -webkit-text-size-adjust: none;
@@ -38,14 +39,19 @@ body {
     line-height: 1.61538;
     color: #888;
     overflow-x:hidden;
+    background-image:cover;
 }
 .bg-light {
     background-color: #f6f9fc !important;
 }
 .bg-primary {
     background: url("assets/BlackWood.jpg") no-repeat center center ;
+    width: 100vw;
+    
 
 }
+
+
 h1,
 h2,
 h3,
@@ -328,6 +334,7 @@ Food card
 .bg-image-1 {
     background: url("assets/BlackWood.jpg") no-repeat center center #151719;
     background-size: cover;
+    width: 100vw;
 }
 
 .menuFries {
@@ -486,6 +493,7 @@ Video testimonial
     width: 50px;
     height: 50px;
     background: url("assets/BlackWood.jpg") no-repeat center center;
+    background-size: cover;
     border-radius: 50%;
     -webkit-animation: pulse-border 1.5s ease-out infinite;
     animation: pulse-border 1.5s ease-out infinite;
@@ -590,6 +598,7 @@ Subscribe form
 ///////////////////////////*/
 .subscribe {
     margin-bottom: 18px;
+    
 }
 .subscribe-content {
     margin-top: 16px;
@@ -599,7 +608,7 @@ Subscribe form
     margin: 0 0 10px;
 }
 .subscribe .btn {
-    width: 100%;
+    width: 80%;
 }
 .subscribe-form {
     display: -webkit-box;
@@ -619,4 +628,18 @@ Subscribe form
     width: auto;
 }
 
-
+@media (max-width: 768px) {
+    .btn-responsive {
+      padding:2px 4px;
+      font-size:80%;
+      line-height: 1;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+    }
+  }
